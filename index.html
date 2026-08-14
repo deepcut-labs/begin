@@ -48,6 +48,50 @@
       color: var(--muted);
       font-size: 1.1rem;
     }
+    section.download {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+    }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    p.desc {
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    a.download-btn {
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: 0.65rem 1.4rem;
+      border: 1px solid var(--fg);
+      border-radius: 0.5rem;
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 550;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+    a.download-btn:hover {
+      background: var(--fg);
+      color: var(--bg);
+    }
+    a.download-btn:focus-visible {
+      outline: 2px solid var(--fg);
+      outline-offset: 3px;
+    }
+    p.meta, p.note {
+      margin-top: 0.9rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+    p.note { margin-top: 0.4rem; }
+    @media (prefers-reduced-motion: reduce) {
+      a.download-btn { transition: none; }
+    }
     footer {
       margin-top: 4rem;
       padding-top: 1.25rem;
@@ -64,6 +108,24 @@
   <main>
     <h1>Deepcut Labs</h1>
     <p class="tagline">Something new is taking shape.</p>
+
+    <section class="download" aria-labelledby="helper-heading">
+      <h2 id="helper-heading">Agent Configurator Helper</h2>
+      <p class="desc">
+        An optional companion for Agent Configurator that enables live process
+        and port monitoring. The app works without it.
+      </p>
+      <a class="download-btn" href="/downloads/AgentConfiguratorHelper-1.5.0.zip" download>
+        Download for macOS
+      </a>
+      <p class="meta">
+        Version 1.5.0 &middot; Apple Silicon &middot; macOS 26 or later &middot; 80&nbsp;KB
+      </p>
+      <p class="note">
+        Move it to your Applications folder, open it once, then approve it in
+        System Settings &rsaquo; General &rsaquo; Login Items.
+      </p>
+    </section>
   </main>
   <footer>
     &copy; 2026 Deepcut Labs, LLC
