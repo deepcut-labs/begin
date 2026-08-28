@@ -3,133 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Deepcut Labs</title>
-  <meta name="description" content="Deepcut Labs, LLC">
-  <style>
-    :root {
-      --bg: #fafaf8;
-      --fg: #1a1a1a;
-      --muted: #6b6b6b;
-      --rule: #e2e2de;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #111113;
-        --fg: #ededea;
-        --muted: #9a9a96;
-        --rule: #2a2a2e;
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1.5rem;
-    }
-    main {
-      max-width: 34rem;
-      width: 100%;
-      text-align: center;
-    }
-    h1 {
-      font-size: clamp(2rem, 6vw, 3rem);
-      font-weight: 650;
-      letter-spacing: -0.02em;
-    }
-    p.tagline {
-      margin-top: 0.75rem;
-      color: var(--muted);
-      font-size: 1.1rem;
-    }
-    section.download {
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--rule);
-    }
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-    }
-    p.desc {
-      margin-top: 0.5rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    a.download-btn {
-      display: inline-block;
-      margin-top: 1.25rem;
-      padding: 0.65rem 1.4rem;
-      border: 1px solid var(--fg);
-      border-radius: 0.5rem;
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 550;
-      transition: background-color 0.15s ease, color 0.15s ease;
-    }
-    a.download-btn:hover {
-      background: var(--fg);
-      color: var(--bg);
-    }
-    a.download-btn:focus-visible {
-      outline: 2px solid var(--fg);
-      outline-offset: 3px;
-    }
-    p.meta, p.note {
-      margin-top: 0.9rem;
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
-    p.note { margin-top: 0.4rem; }
-    @media (prefers-reduced-motion: reduce) {
-      a.download-btn { transition: none; }
-    }
-    footer {
-      margin-top: 4rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--rule);
-      color: var(--muted);
-      font-size: 0.85rem;
-      width: 100%;
-      max-width: 34rem;
-      text-align: center;
-    }
-    footer a { color: inherit; }
-  </style>
+  <title>Deepcut Labs — Mac software for developers</title>
+  <meta name="description" content="Deepcut Labs, LLC builds native Mac software for developers, including Agent Configurator and MDview.">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>Deepcut Labs</h1>
-    <p class="tagline">Something new is taking shape.</p>
+  <header class="site-header">
+    <a class="wordmark" href="/">Deepcut Labs</a>
+    <nav>
+      <a href="/products/">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="download" aria-labelledby="helper-heading">
-      <h2 id="helper-heading">Agent Configurator Helper</h2>
-      <p class="desc">
-        An optional companion for Agent Configurator that enables live process
-        and port monitoring. The app works without it.
-      </p>
-      <a class="download-btn" href="/downloads/AgentConfiguratorHelper-1.5.0.zip" download>
-        Download for macOS
-      </a>
-      <p class="meta">
-        Version 1.5.0 &middot; Apple Silicon &middot; macOS 26 or later &middot; 80&nbsp;KB
-      </p>
-      <p class="note">
-        Move it to your Applications folder, open it once, then approve it in
-        System Settings &rsaquo; General &rsaquo; Login Items.
-      </p>
-    </section>
+  <main class="wide">
+    <h1>Native Mac software for developers</h1>
+    <p class="lede">
+      Deepcut Labs, LLC builds small, focused Mac apps for the way developers actually work —
+      tools that read your own files, run on your own machine, and keep your data there.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Agent Configurator</h3>
+        <p class="status">macOS 26 or later &middot; Apple Silicon</p>
+        <p>
+          Author your AI coding-agent configuration once — rules, skills, commands, context and
+          subagents — then deploy it into any project, for any runtime. And see what your agents
+          actually did, and what it cost.
+        </p>
+        <p class="more"><a href="/products/agent-configurator.html">About Agent Configurator &rarr;</a></p>
+      </article>
+
+      <article class="card">
+        <h3>MDview</h3>
+        <p class="status">Free &middot; macOS 26 or later</p>
+        <p>
+          A Quick Look preview extension for Markdown. Press the spacebar in Finder and read a
+          properly rendered document — tables, task lists, footnotes and all — styled with your
+          own CSS.
+        </p>
+        <p class="more"><a href="/products/mdview.html">About MDview &rarr;</a></p>
+      </article>
+    </div>
+
+    <h2>What we care about</h2>
+    <p>
+      Every app we ship is native, sandboxed, and built to the Apple Human Interface Guidelines —
+      full light and dark appearance, complete keyboard and menu-bar coverage, and VoiceOver
+      support throughout.
+    </p>
+    <p>
+      We do not run analytics, and we do not collect your data. Our apps read what is already on
+      your Mac and keep it there. When one of them reaches the network, it is because you asked
+      it to, and it goes to a service you configured yourself. That is described in full in our
+      <a href="/privacy.html">privacy policy</a>.
+    </p>
+
+    <h2>Get in touch</h2>
+    <p>
+      Questions, support requests and bug reports all reach a real person:
+      <a href="mailto:support@deepcutlabs.com">support@deepcutlabs.com</a>. More ways to reach us
+      are on the <a href="/contact.html">contact page</a>.
+    </p>
   </main>
-  <footer>
-    &copy; 2026 Deepcut Labs, LLC &middot; <a href="/privacy.html">Privacy</a>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Deepcut Labs, LLC</span>
+    <nav>
+      <a href="/products/">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
   </footer>
 </body>
 </html>

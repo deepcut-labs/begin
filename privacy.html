@@ -4,131 +4,103 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Deepcut Labs</title>
-  <meta name="description" content="Privacy policy for Agent Configurator by Deepcut Labs, LLC.">
-  <style>
-    :root {
-      --bg: #fafaf8;
-      --fg: #1a1a1a;
-      --muted: #6b6b6b;
-      --rule: #e2e2de;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #111113;
-        --fg: #ededea;
-        --muted: #9a9a96;
-        --rule: #2a2a2e;
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.65;
-      min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 3rem 1.5rem;
-    }
-    main { max-width: 42rem; width: 100%; }
-    h1 {
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
-      font-weight: 650;
-      letter-spacing: -0.02em;
-    }
-    p.updated { margin-top: 0.4rem; color: var(--muted); font-size: 0.85rem; }
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 650;
-      letter-spacing: -0.01em;
-      margin-top: 2.25rem;
-    }
-    p, ul { margin-top: 0.75rem; }
-    ul { padding-left: 1.25rem; }
-    li { margin-top: 0.35rem; }
-    p.lede {
-      margin-top: 1.25rem;
-      font-size: 1.05rem;
-    }
-    strong { font-weight: 620; }
-    a { color: inherit; }
-    code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.9em;
-    }
-    footer {
-      margin-top: 3.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--rule);
-      color: var(--muted);
-      font-size: 0.85rem;
-      width: 100%;
-      max-width: 42rem;
-    }
-  </style>
+  <meta name="description" content="Privacy policy for Agent Configurator and MDview by Deepcut Labs, LLC.">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="wordmark" href="/">Deepcut Labs</a>
+    <nav>
+      <a href="/products/">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
   <main>
     <h1>Privacy Policy</h1>
-    <p class="updated">Agent Configurator &middot; Deepcut Labs, LLC &middot; Last updated 13 August 2026</p>
+    <p class="updated">Deepcut Labs, LLC &middot; Agent Configurator and MDview &middot; Last updated 28 August 2026</p>
 
     <p class="lede">
-      Agent Configurator does not have a server. We operate no backend, no account system, and no
-      analytics. We do not receive your data, because there is nowhere for it to be sent.
+      Deepcut Labs has no server. We operate no backend, no account system and no analytics. We do
+      not receive your data, because there is nowhere for it to be sent. This policy covers both of
+      our applications; where they differ, they are described separately below.
     </p>
 
-    <h2>What the app stores, and where</h2>
+    <h2>What applies to both apps</h2>
     <p>
-      Everything the app creates stays on your Mac, under your control:
+      Neither app contains telemetry, crash reporting, usage tracking, an advertising identifier or
+      a third-party analytics SDK of any kind. Neither app phones home, and neither checks in with
+      us on launch or at any other time.
     </p>
+    <p>
+      <strong>Deepcut Labs collects nothing.</strong> We receive no personal information, no usage
+      data, no file contents and no diagnostics from either app. If you contact us by email, we will
+      of course have whatever you put in that email, and we use it only to reply to you.
+    </p>
+
+    <h2>Agent Configurator</h2>
+
+    <h3>What the app stores, and where</h3>
+    <p>Everything the app creates stays on your Mac, under your control:</p>
     <ul>
-      <li><strong>Your library</strong> — rules, skills, commands, agents, context and profiles — is a
-        folder of ordinary files. It lives in your Documents folder by default, or in your own iCloud
-        Drive if you choose that, or in any folder you pick.</li>
+      <li><strong>Your library</strong> — rules, skills, commands, agents, context and profiles — is
+        a folder of ordinary files. It lives in your Documents folder by default, or in your own
+        iCloud Drive if you choose that, or in any folder you pick.</li>
       <li><strong>Settings and app state</strong> live in the app's sandbox container on your Mac.</li>
       <li><strong>API keys and repository access tokens</strong> are stored in your macOS Keychain.
         They never leave your Mac except as authentication to the service you entered them for.</li>
     </ul>
 
-    <h2>What the app reads</h2>
+    <h3>What the app reads</h3>
     <p>
       Agent Configurator reads AI coding-agent configuration and session data already on your Mac —
       files such as <code>~/.claude</code>, <code>~/.cursor</code> and the projects you register. It
       reads these only from folders you explicitly grant access to through the macOS folder picker,
-      and it reads them locally to show you your own usage, costs and configuration. That information
-      is never transmitted anywhere.
+      and it reads them locally to show you your own usage, costs and configuration. That
+      information is never transmitted anywhere.
     </p>
 
-    <h2>When the app uses the network</h2>
-    <p>
-      Only when you ask it to, and only to services you have configured yourself:
-    </p>
+    <h3>When the app uses the network</h3>
+    <p>Only when you ask it to, and only to services you have configured yourself:</p>
     <ul>
       <li><strong>AI providers</strong> (Anthropic, OpenAI, Google, xAI) — when you use the assisted
         authoring features. Requests go directly from your Mac to that provider, authenticated with
         your own API key, and are governed by that provider's privacy policy.</li>
-      <li><strong>Repository and content sources</strong> (GitHub and other git hosts, Context7) — when
-        you add a remote source and it syncs. Requests go directly to that service using credentials
-        you supplied.</li>
+      <li><strong>Repository and content sources</strong> (GitHub and other git hosts, Context7) —
+        when you add a remote source and it syncs. Requests go directly to that service using
+        credentials you supplied.</li>
     </ul>
+
+    <h3>The optional Helper</h3>
     <p>
-      There is no telemetry, no crash reporting, no usage tracking, no advertising identifier, and no
-      third-party analytics SDK of any kind. The app does not phone home, and it does not check in
-      with us on launch or at any other time.
+      Agent Configurator Helper is a separate, optional download. It enumerates running processes
+      and open ports belonging to your own user account, and ends a process when you ask it to. It
+      reports what it finds only to Agent Configurator on the same Mac, over a local connection that
+      verifies both sides' code signatures. It has no network access of its own and stores nothing.
     </p>
 
-    <h2>What we collect</h2>
+    <h2>MDview</h2>
     <p>
-      Nothing. Deepcut Labs receives no personal information, no usage data, no file contents and no
-      diagnostics from the app. If you contact us by email, we will of course have whatever you put in
-      that email, and we use it only to reply to you.
+      MDview is a Quick Look preview extension and a small settings app. It has
+      <strong>no network features at all</strong>: no update check, no remote content and no
+      outbound requests of any kind.
     </p>
+    <ul>
+      <li><strong>What it reads</strong> — the Markdown file macOS hands it to preview, and the
+        stylesheets you have added. Nothing else; a Quick Look extension is granted access to the
+        previewed file alone.</li>
+      <li><strong>What it stores</strong> — your theme choice and your stylesheets, in a container
+        shared between the extension and the settings app on your Mac. If you import stylesheets
+        from a folder, they are copied from a folder you chose in the macOS folder picker.</li>
+      <li><strong>What it prevents</strong> — JavaScript is disabled in previews, and every
+        navigation other than a local file is cancelled. A Markdown document cannot contact anything
+        when you preview it, even if it contains embedded HTML that tries to.</li>
+    </ul>
 
     <h2>Beta testing</h2>
     <p>
-      While the app is distributed through TestFlight, Apple collects installation and crash
+      While an app is distributed through TestFlight, Apple collects installation and crash
       information under its own terms. That is Apple's collection, not ours — see
       <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. We may see aggregate
       tester counts and crash reports that Apple provides. If you send feedback through TestFlight,
@@ -137,23 +109,31 @@
 
     <h2>Children</h2>
     <p>
-      Agent Configurator is a developer tool intended for adults and is not directed at children
-      under 13.
+      Our apps are developer tools intended for adults and are not directed at children under 13.
     </p>
 
     <h2>Changes</h2>
     <p>
       If this policy changes, the updated version will be posted on this page with a new date. If a
-      future version of the app ever collects anything, we will say so here before it ships.
+      future version of either app ever collects anything, we will say so here before it ships.
     </p>
 
     <h2>Contact</h2>
     <p>
-      Questions about this policy: <a href="mailto:privacy@deepcutlabs.com">privacy@deepcutlabs.com</a>
+      Questions about this policy:
+      <a href="mailto:privacy@deepcutlabs.com">privacy@deepcutlabs.com</a><br>
+      Deepcut Labs, LLC &middot; 30272 Belmont Ct, Agoura Hills, CA 91301, United States
     </p>
   </main>
-  <footer>
-    &copy; 2026 Deepcut Labs, LLC &middot; <a href="/">deepcutlabs.com</a>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Deepcut Labs, LLC</span>
+    <nav>
+      <a href="/products/">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
   </footer>
 </body>
 </html>

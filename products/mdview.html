@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MDview — Deepcut Labs</title>
+  <meta name="description" content="MDview is a free Quick Look preview extension that renders Markdown in the macOS Finder, styled with your own CSS.">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="/">Deepcut Labs</a>
+    <nav>
+      <a href="/products/" aria-current="page">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wide">
+    <p class="eyebrow">Product &middot; Free</p>
+    <h1>MDview</h1>
+    <p class="lede">
+      Press the spacebar on a Markdown file in Finder and read it properly rendered — not as raw
+      text, and not in a browser. MDview is a Quick Look preview extension for macOS, styled with
+      your own CSS.
+    </p>
+
+    <div class="actions">
+      <a class="btn" href="mailto:support@deepcutlabs.com?subject=MDview%200.1.0">Email us for a copy</a>
+      <a class="btn secondary" href="/contact.html">Contact</a>
+    </div>
+    <p class="updated">
+      Version 0.1.0 &middot; free &middot; macOS 26 or later. The notarized build is in preparation
+      for direct download; write to us and we will send it.
+    </p>
+
+    <h2>Markdown, rendered where you already are</h2>
+    <p>
+      Quick Look is the fastest way to look at a file on a Mac, and until now it showed Markdown as
+      plain text. MDview renders it properly, with the GitHub-flavoured extensions people actually
+      write: <strong>tables, task lists, strikethrough, autolinks and footnotes</strong>, alongside
+      the full range of standard Markdown.
+    </p>
+
+    <figure>
+      <img src="/assets/img/mdview-typography.png" width="1279" height="1400" loading="lazy"
+           alt="A Quick Look preview of sample.md showing the six heading levels, a paragraph with bold, italic, strikethrough, inline code and links, and nested unordered, ordered and task lists.">
+      <figcaption>Headings, inline styles and every kind of list — rendered in the Quick Look panel.</figcaption>
+    </figure>
+
+    <h2>Code and tables that stay readable</h2>
+    <p>
+      Fenced code blocks, indented code blocks and inline code keep their monospace treatment and
+      their whitespace. Tables get real borders and header emphasis rather than pipe characters.
+      It reads the way the document was meant to read.
+    </p>
+
+    <figure>
+      <img src="/assets/img/mdview-code-tables.png" width="1279" height="1400" loading="lazy"
+           alt="A Quick Look preview showing inline code, three styles of code block including a Python function, a bordered three-row table with headers, and a horizontal rule.">
+      <figcaption>Code blocks and tables in the built-in stylesheet's dark appearance.</figcaption>
+    </figure>
+
+    <h2>The parts other previewers skip</h2>
+    <p>
+      Footnotes resolve and link back. Definition-style lists, raw HTML passthrough and escaped
+      characters all behave the way the Markdown spec says they should — because MDview renders
+      with <a href="https://github.com/github/cmark-gfm">cmark-gfm</a>, the same engine GitHub
+      built, compiled directly into the extension.
+    </p>
+
+    <figure>
+      <img src="/assets/img/mdview-extended.png" width="1279" height="1400" loading="lazy"
+           alt="A Quick Look preview showing a horizontal rule, an image placeholder, a definition-style list, a linked footnote reference with its footnote text, an HTML passthrough block, and escaped characters shown literally.">
+      <figcaption>Footnotes, HTML passthrough and escaped characters, handled correctly.</figcaption>
+    </figure>
+
+    <h2>Your CSS, your theme</h2>
+    <p>
+      MDview ships with a stylesheet built from CSS custom properties, so a sheet of your own can
+      override only the parts it cares about. Add a single stylesheet, or point MDview at a folder
+      and have it mirror every <code>.css</code> file in it — including a folder in iCloud Drive, so
+      the same styling follows you between Macs.
+    </p>
+    <p>
+      A separate theme override — <strong>System, Light or Dark</strong> — applies to previews only,
+      leaving the rest of your Mac alone. It sets the preview's appearance at the system level, so a
+      stylesheet written against <code>prefers-color-scheme</code> follows a forced Light or Dark
+      with no changes and no special class convention.
+    </p>
+
+    <h2>Nothing leaves the preview</h2>
+    <p>
+      JavaScript is disabled outright, and every navigation that is not a local file is cancelled
+      before it starts. A Markdown file cannot phone home when you preview it, and MDview has no
+      network features of its own — no update check, no analytics, nothing. See the
+      <a href="/privacy.html">privacy policy</a>.
+    </p>
+
+    <h2>When something else has claimed Markdown</h2>
+    <p>
+      macOS picks one winner when several extensions preview the same file type, and that choice
+      cannot be made programmatically. MDview's <strong>Check Quick Look</strong> diagnostic
+      previews a real file and listens for its own response; if something else answered, it tells
+      you so and takes you straight to Login Items &amp; Extensions to sort it out.
+    </p>
+    <p>
+      MDview declares Markdown as an <em>imported</em> type rather than exporting its own, so it
+      coexists with BBEdit, MarkEdit and other editors instead of competing with their file
+      handlers.
+    </p>
+
+    <h2>Known limits in this release</h2>
+    <ul>
+      <li><strong>No local images.</strong> Quick Look grants access to the file you previewed, not
+        its neighbours, so <code>![](./img/photo.png)</code> will not load.</li>
+      <li><strong>No thumbnails yet.</strong> Rendered Finder thumbnails are a separate extension,
+        planned for a future release.</li>
+      <li><strong>One rendering engine.</strong> A sandboxed Quick Look extension cannot run
+        external programs, so Pandoc and MultiMarkdown are not options; cmark-gfm is compiled in.</li>
+    </ul>
+
+    <h2>Details</h2>
+    <dl class="rows">
+      <div class="row">
+        <dt>Price</dt>
+        <dd>Free</dd>
+      </div>
+      <div class="row">
+        <dt>Version</dt>
+        <dd>0.1.0</dd>
+      </div>
+      <div class="row">
+        <dt>System</dt>
+        <dd>macOS 26 or later</dd>
+      </div>
+      <div class="row">
+        <dt>Architecture</dt>
+        <dd>Universal — Apple Silicon and Intel</dd>
+      </div>
+      <div class="row">
+        <dt>File types</dt>
+        <dd><code>.md</code>, <code>.markdown</code>, <code>.mdown</code>, <code>.mkd</code>,
+          <code>.mdwn</code>, <code>.mdtext</code>, <code>.mdx</code>, plus Quarto
+          (<code>.qmd</code>) and R Markdown (<code>.rmd</code>)</dd>
+      </div>
+      <div class="row">
+        <dt>Distribution</dt>
+        <dd>Direct download, signed with our Developer ID and notarized by Apple</dd>
+      </div>
+      <div class="row">
+        <dt>Support</dt>
+        <dd><a href="mailto:support@deepcutlabs.com">support@deepcutlabs.com</a></dd>
+      </div>
+    </dl>
+
+    <h2>Credits</h2>
+    <p>
+      MDview renders with <strong>cmark-gfm</strong> (&copy; 2014 John MacFarlane) and the code it
+      derives from — houdini (&copy; 2012 Vicent Martí), buffer and chunk (&copy; 2012 GitHub, Inc.)
+      and utf8proc (&copy; 2009 Public Software Group e.V.). Full notices are in the app's About
+      window. And to John Gruber, who created Markdown in 2004.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Deepcut Labs, LLC</span>
+    <nav>
+      <a href="/products/">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Configurator — Deepcut Labs</title>
+  <meta name="description" content="Agent Configurator is a native Mac app for authoring and deploying AI coding-agent configuration, and for seeing what your agents did and what it cost.">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="/">Deepcut Labs</a>
+    <nav>
+      <a href="/products/" aria-current="page">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wide">
+    <p class="eyebrow">Product</p>
+    <h1>Agent Configurator</h1>
+    <p class="lede">
+      Author your AI coding-agent configuration once, deploy it everywhere, and see exactly what
+      your agent sessions did — and what they cost. All on your Mac, all in your own files.
+    </p>
+
+    <div class="actions">
+      <a class="btn" href="mailto:support@deepcutlabs.com?subject=Agent%20Configurator%20beta">Request beta access</a>
+      <a class="btn secondary" href="/downloads/AgentConfiguratorHelper-1.5.0.zip">Download the Helper (1.5.0)</a>
+    </div>
+    <p class="updated">
+      Agent Configurator is currently in beta testing through TestFlight. The Helper is an optional
+      companion described below.
+    </p>
+
+    <h2>Author once, deploy everywhere</h2>
+    <p>
+      Keep your rules, skills, commands, context files and subagent definitions in one library
+      instead of scattered across a dozen project folders. Write an item once, then deploy it
+      wherever it is needed — into individual projects or into your global configuration.
+    </p>
+    <p>
+      Agent Configurator understands the layout each tool expects and writes each file to the right
+      place, in the right format, for every runtime it supports: <strong>Claude Code, Codex CLI,
+      Cursor, Gemini CLI and Grok CLI</strong>. Group related items into Profiles and deploy them
+      together — a &ldquo;Swift project&rdquo; profile, a &ldquo;web frontend&rdquo; profile — so
+      setting up a new repository takes one action instead of twenty.
+    </p>
+
+    <h2>Bring in what already exists</h2>
+    <p>
+      Import configuration you have already written straight from your projects and home directory
+      into the library. Sync from remote sources — Git-backed blueprint repositories, skills.sh and
+      Context7 — with clear indicators showing which items are new, which have updates available and
+      which are already current. Import individually or in bulk.
+    </p>
+
+    <figure>
+      <img src="/assets/img/ac-remote-sources.png" width="1400" height="817" loading="lazy"
+           alt="The Agent Configurator window showing a remote source, skills.sh, with a list of available skill entries and their file counts. Each entry shows whether it is already imported or available to download.">
+      <figcaption>Remote sources list what is available, what is new, and what you already have.</figcaption>
+    </figure>
+
+    <h2>See what your agents are doing</h2>
+    <p>
+      Agent Configurator reads the session transcripts Claude Code and Codex CLI already write to
+      your Mac and turns them into something you can actually read:
+    </p>
+    <ul>
+      <li><strong>Sessions</strong> — every session with its project, message counts, and activity over time</li>
+      <li><strong>Search</strong> — full-text search across your entire transcript history</li>
+      <li><strong>Tools</strong> — which tools your agents reach for most, and how often</li>
+      <li><strong>Costs</strong> — token usage and estimated spend, broken down by model, runtime and day</li>
+    </ul>
+
+    <figure>
+      <img src="/assets/img/ac-activity-tools.png" width="1400" height="817" loading="lazy"
+           alt="The Activity screen's Tools tab, showing total tool calls, files touched, average calls per session, a bar chart of usage over fourteen days, and a ranked distribution of which tools were used most.">
+      <figcaption>Activity &rarr; Tools: which tools your agents reach for, and how usage trends over time.</figcaption>
+    </figure>
+
+    <h2>Know your configuration</h2>
+    <p>
+      See the runtime configuration your agents are actually using — memory files, hooks, MCP
+      servers and permission rules — in a readable view instead of hand-parsed JSON. Browse the Git
+      repositories across your workspace with branch and status detail, and check workspace health
+      across every registered project.
+    </p>
+
+    <h2>Your files, your machine</h2>
+    <p>
+      Your library is a plain folder of Markdown files with YAML frontmatter. No proprietary
+      database and no lock-in — readable, diffable and version-controllable with the tools you
+      already use. Store it locally, in iCloud Drive, or in any folder you choose, including a
+      Dropbox or network location.
+    </p>
+    <p>
+      Your library, your projects and your session transcripts are read locally and stay on your
+      Mac. Nothing is collected and no analytics are sent to us. The features that do reach the
+      network only run when you invoke them: syncing a remote source you have added, searching
+      Context7, and the optional draft assistant, which sends your draft to the AI provider you
+      choose using your own API key, stored in the system Keychain. See the
+      <a href="/privacy.html">privacy policy</a> for the full account.
+    </p>
+
+    <h2>The optional Helper</h2>
+    <p>
+      Agent Configurator is sandboxed, which means a few workspace features — enumerating running
+      processes with their memory use, ending a stuck one, and listing the ports your own processes
+      have open — are outside what the app itself is permitted to do.
+    </p>
+    <p>
+      <strong>Agent Configurator Helper</strong> is a small, separately downloaded companion that
+      supplies exactly those three capabilities and nothing else. It is signed with our Developer ID
+      and notarized by Apple, installs as a login item, and talks to the app over a private XPC
+      connection that verifies both sides' code signatures. The app works fully without it; features
+      that need it say so, and offer to install it.
+    </p>
+    <p>
+      <a href="/downloads/AgentConfiguratorHelper-1.5.0.zip">Download Agent Configurator Helper 1.5.0</a>
+    </p>
+
+    <h2>Built for macOS</h2>
+    <p>
+      A genuinely native app: full light and dark appearance, complete keyboard and menu-bar
+      coverage, VoiceOver support throughout, and the standard macOS controls you already know.
+      Sandboxed, with access only to the folders you explicitly grant.
+    </p>
+
+    <h2>Requirements</h2>
+    <dl class="rows">
+      <div class="row">
+        <dt>System</dt>
+        <dd>macOS 26 or later</dd>
+      </div>
+      <div class="row">
+        <dt>Hardware</dt>
+        <dd>Apple Silicon Mac</dd>
+      </div>
+      <div class="row">
+        <dt>Works with</dt>
+        <dd>Claude Code, Codex CLI, Cursor, Gemini CLI, Grok CLI</dd>
+      </div>
+      <div class="row">
+        <dt>Imports from</dt>
+        <dd>Git blueprint repositories, skills.sh, Context7</dd>
+      </div>
+      <div class="row">
+        <dt>Availability</dt>
+        <dd>Beta, via TestFlight — <a href="mailto:support@deepcutlabs.com?subject=Agent%20Configurator%20beta">write to us for an invitation</a></dd>
+      </div>
+      <div class="row">
+        <dt>Support</dt>
+        <dd><a href="mailto:support@deepcutlabs.com">support@deepcutlabs.com</a></dd>
+      </div>
+    </dl>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Deepcut Labs, LLC</span>
+    <nav>
+      <a href="/products/">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </footer>
+</body>
+</html>
