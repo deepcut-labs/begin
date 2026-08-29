@@ -12,13 +12,15 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111113;
-    --fg: #ededea;
-    --muted: #9a9a96;
-    --rule: #2a2a2e;
-    --panel: #191a1d;
-    --accent: #ededea;
-    --brand: #e2599c;      /* the light magenta is too dark on #111113 */
+    /* Near-black carrying the navy from the logo, rather than a neutral grey.
+       The whole ramp moves together so panels and rules stay in the same hue. */
+    --bg: #0e1119;
+    --fg: #eaecf1;
+    --muted: #969cab;
+    --rule: #262c3b;
+    --panel: #151925;
+    --accent: #eaecf1;
+    --brand: #e2599c;      /* the light magenta is too dark on this ground */
     --brand-soft: #e2599c1f;
   }
 }
