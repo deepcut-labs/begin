@@ -63,6 +63,9 @@ body {
   width: auto;
   display: block;
 }
+/* Homepage carries the lockup in the hero, so its header has no logo. */
+.site-header.nologo { justify-content: flex-end; }
+
 .site-header nav {
   display: flex;
   flex-wrap: wrap;
