@@ -26,8 +26,14 @@
   </header>
 
   <main class="wide">
-    <p class="eyebrow">Product</p>
-    <h1>Agent Configurator</h1>
+    <div class="product-head">
+      <img class="appicon" src="/assets/img/icon-agent-configurator.png"
+           width="84" height="84" alt="The Agent Configurator app icon">
+      <div class="titles">
+        <p class="eyebrow">Product</p>
+        <h1>Agent Configurator</h1>
+      </div>
+    </div>
     <p class="lede">
       Author your AI coding-agent configuration once, deploy it everywhere, and see exactly what
       your agent sessions did — and what they cost. All on your Mac, all in your own files.
@@ -55,6 +61,27 @@
       together — a &ldquo;Swift project&rdquo; profile, a &ldquo;web frontend&rdquo; profile — so
       setting up a new repository takes one action instead of twenty.
     </p>
+
+    <figure class="diagram">
+      <div class="dg-flow">
+        <div class="dg-node accent">
+          <strong>Your library</strong>
+          <span>rules &middot; skills &middot; commands &middot; context &middot; agents &middot; profiles</span>
+        </div>
+        <div class="dg-arrow" aria-hidden="true">&darr;<small>WRITTEN ONCE, TRANSFORMED PER RUNTIME</small></div>
+        <ul class="dg-targets">
+          <li>Claude Code</li>
+          <li>Codex CLI</li>
+          <li>Cursor</li>
+          <li>Gemini CLI</li>
+          <li>Grok CLI</li>
+        </ul>
+      </div>
+      <figcaption>
+        One item, authored once, lands in the right place and the right format for every runtime
+        you deploy it to &mdash; in a project, or in your global configuration.
+      </figcaption>
+    </figure>
 
     <h2>Bring in what already exists</h2>
     <p>

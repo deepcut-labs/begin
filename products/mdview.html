@@ -26,8 +26,14 @@
   </header>
 
   <main class="wide">
-    <p class="eyebrow">Product &middot; Free</p>
-    <h1>MDview</h1>
+    <div class="product-head">
+      <img class="appicon" src="/assets/img/icon-mdview.png"
+           width="84" height="84" alt="The MDview app icon">
+      <div class="titles">
+        <p class="eyebrow">Product &middot; Free</p>
+        <h1>MDview</h1>
+      </div>
+    </div>
     <p class="lede">
       Press the spacebar on a Markdown file in Finder and read it properly rendered — not as raw
       text, and not in a browser. MDview is a Quick Look preview extension for macOS, styled with
@@ -105,6 +111,34 @@
       network features of its own — no update check, no analytics, nothing. See the
       <a href="/privacy.html">privacy policy</a>.
     </p>
+    <p>
+      That is enforced by how the extension is built, not just by policy. A Quick Look extension
+      runs sandboxed and is handed one file; MDview keeps all writing in the settings app, so the
+      part of it that touches your documents can only ever read:
+    </p>
+
+    <figure class="diagram">
+      <div class="dg-lane">
+        <div class="dg-node">
+          <strong>Settings app</strong>
+          <span>the only part that writes</span>
+        </div>
+        <div class="dg-arrow" aria-hidden="true"><span class="gl">&darr;</span><small>WRITES</small></div>
+        <div class="dg-node accent">
+          <strong>Shared container</strong>
+          <span>your theme choice and your stylesheets</span>
+        </div>
+        <div class="dg-arrow" aria-hidden="true"><span class="gl">&uarr;</span><small>READS ONLY</small></div>
+        <div class="dg-node">
+          <strong>Preview extension</strong>
+          <span>no writing, no network</span>
+        </div>
+      </div>
+      <figcaption>
+        The extension cannot write, even to its own container, and every navigation that is not a
+        local file is cancelled before it starts. Nothing you preview can reach the network.
+      </figcaption>
+    </figure>
 
     <h2>When something else has claimed Markdown</h2>
     <p>
