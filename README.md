@@ -8,7 +8,7 @@ The Deepcut Labs, LLC website — a static site served by GitHub Pages at
 ```
 index.html                        home
 about.html                        company details
-contact.html                      support, phone, mailing address
+contact.html                      support and feedback channels
 products/index.html               product overview
 products/agent-configurator.html  Agent Configurator
 products/mdview.html              MDview
