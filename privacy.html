@@ -27,7 +27,7 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <p class="updated">Deepcut Labs, LLC &middot; Agent Configurator and MDview &middot; Last updated 5 September 2026</p>
+    <p class="updated">Deepcut Labs, LLC &middot; Agent Configurator and MDview &middot; Last updated 2 October 2026</p>
 
     <p class="lede">
       Deepcut Labs has no server. We operate no backend, no account system and no analytics. We do
@@ -83,9 +83,15 @@
     <h3>The optional Helper</h3>
     <p>
       Agent Configurator Helper is a separate, optional download. It enumerates running processes
-      and open ports belonging to your own user account, and ends a process when you ask it to. It
-      reports what it finds only to Agent Configurator on the same Mac, over a local connection that
-      verifies both sides' code signatures. It has no network access of its own and stores nothing.
+      and open ports belonging to your own user account, and ends a process when you ask it to. On
+      your request it runs the Claude Code and Codex command-line tools you already have installed
+      to generate text, and it lets AI agents you have connected read and update your Library over
+      a local connection. It reports only to Agent Configurator and those agents on the same Mac;
+      the connection to Agent Configurator verifies both sides' code signatures. The Helper makes
+      no network connections of its own. A command-line tool it runs talks to its own provider
+      under your own sign-in, and the text sent to it is the Library content you chose. The Helper
+      stores nothing apart from a record of which version registered itself; the files it writes
+      are the Library and project files you ask it to.
     </p>
 
     <h2>MDview</h2>

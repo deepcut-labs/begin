@@ -168,16 +168,25 @@
 
     <h2>The optional Helper</h2>
     <p>
-      Agent Configurator is sandboxed, which means a few workspace features — enumerating running
-      processes with their memory use, ending a stuck one, and listing the ports your own processes
-      have open — are outside what the app itself is permitted to do.
+      Agent Configurator is sandboxed, which means some features are outside what the app itself
+      is permitted to do: enumerating running processes with their memory use, ending a stuck one,
+      listing the ports your own processes have open, running the Claude Code or Codex
+      command-line tools you already have installed to generate text, and letting the AI agents you
+      connect read and update your Library over MCP.
     </p>
     <p>
       <strong>Agent Configurator Helper</strong> is a small, separately downloaded companion that
-      supplies exactly those three capabilities and nothing else. It is signed with our Developer ID
-      and notarized by Apple, installs as a login item, and talks to the app over a private XPC
-      connection that verifies both sides' code signatures. The app works fully without it; features
-      that need it say so, and offer to install it.
+      does exactly those things, and only when asked. It is signed with our Developer ID and
+      notarized by Apple, installs as a login item, and talks to the app over a private XPC
+      connection that verifies both sides' code signatures. The Helper makes no network connections
+      of its own; when it runs a command-line tool for you, that tool talks to its own service
+      under your own sign-in. The app works fully without it; features that need it say so, and
+      offer to install it.
+    </p>
+    <p>
+      After installing, allow it in System Settings → General → Login Items &amp; Extensions. If
+      Agent Configurator ever reports that the Helper isn't responding, use Settings → Text Gen →
+      Repair Helper.
     </p>
     <p>
       <a href="/downloads/AgentConfiguratorHelper-1.0.3.zip">Download Agent Configurator Helper 1.0.3</a>
