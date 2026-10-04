@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+build/
+DerivedData/
+.derivedData/
+*.ipa
+*.dSYM.zip
+.swiftpm/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcuserdata
+*.xcscmblueprint
+*.xccheckout
+*.profraw
+
+# Swift Package Manager
+.build/
+# First-party local packages ARE tracked; only their build output is ignored (security MEDIUM-3
+# — the vendored libgit2 + all Gitlib/ObserveKit/etc. source must have version history + review).
+Packages/*/.build/
+Packages/*/.swiftpm/
+Package.pins
+Package.resolved
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+
+# Cursor / AI tooling
+.cursor/projects/
+.cursor/rules/core/
+
+# Agent config
+.claude/
+.codex/
+.gemini/
+
+# Plans (local only)
+plans/
+
+# Blueprints
+.blueprints.json
+
+# Xcode clang module-scanning artifacts
+AgentConfigurator.xcodeproj/-Xcc/
