@@ -27,14 +27,6 @@ Package.pins
 Package.resolved
 *.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
 
-# Cursor / AI tooling
-.cursor/projects/
-.cursor/rules/core/
-
-# Agent config
-.claude/
-.codex/
-.gemini/
 
 # Plans (local only)
 plans/

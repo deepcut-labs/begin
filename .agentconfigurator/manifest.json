@@ -1,0 +1,88 @@
+{
+  "deployments" : [
+    {
+      "agent" : "claude",
+      "deployedAt" : "2026-10-17T04:41:56Z",
+      "deployedContentHash" : "c48160daae1f557fe16758a443c28641a141305a2678beccdc91c5c3cffff8df",
+      "deployedRelativePath" : ".claude\/skills\/commit\/SKILL.md",
+      "deployedRelativePaths" : [
+        ".claude\/skills\/commit\/SKILL.md"
+      ],
+      "id" : "90784F4E-D5F9-45D4-9661-2BAB26E48F12",
+      "itemDescription" : "Disciplined working-commit assistant. Groups changes into logical changesets, adds CHANGELOG entries under [Unreleased], drafts Conventional Commits messages, and commits only after explicit user approval. Never bumps VERSION, never tags — cutting a release is \/release.",
+      "itemTitle" : "commit",
+      "itemType" : "skill",
+      "libraryIndexKey" : "skills\/commit",
+      "sourceVersion" : "1.0.0",
+      "writtenBy" : "E946E858-BEFE-45B9-B037-5A831EFED19B"
+    },
+    {
+      "agent" : "gemini",
+      "deployedAt" : "2026-10-17T04:41:56Z",
+      "deployedContentHash" : "e41d982586f73f1cedc9b81d9c8009e50ae341aa3a26998d8cb27bc1b5572de5",
+      "deployedRelativePath" : ".agents\/skills\/commit\/SKILL.md",
+      "deployedRelativePaths" : [
+        ".agents\/skills\/commit\/SKILL.md"
+      ],
+      "id" : "A0AF9FDF-BE30-4B98-9B24-FF7F52859634",
+      "itemDescription" : "Disciplined working-commit assistant. Groups changes into logical changesets, adds CHANGELOG entries under [Unreleased], drafts Conventional Commits messages, and commits only after explicit user approval. Never bumps VERSION, never tags — cutting a release is \/release.",
+      "itemTitle" : "commit",
+      "itemType" : "skill",
+      "libraryIndexKey" : "skills\/commit",
+      "sourceVersion" : "1.0.0",
+      "writtenBy" : "E946E858-BEFE-45B9-B037-5A831EFED19B"
+    },
+    {
+      "agent" : "grok",
+      "deployedAt" : "2026-10-17T04:41:56Z",
+      "deployedContentHash" : "73bbc7073071fa24f499154d49aa3debc204543abebfd3559ae1b6fadfdd0379",
+      "deployedRelativePath" : ".grok\/skills\/commit\/SKILL.md",
+      "deployedRelativePaths" : [
+        ".grok\/skills\/commit\/SKILL.md"
+      ],
+      "id" : "6B473BBE-5F0E-48C9-ADC5-0B7E4B981FE8",
+      "itemDescription" : "Disciplined working-commit assistant. Groups changes into logical changesets, adds CHANGELOG entries under [Unreleased], drafts Conventional Commits messages, and commits only after explicit user approval. Never bumps VERSION, never tags — cutting a release is \/release.",
+      "itemTitle" : "commit",
+      "itemType" : "skill",
+      "libraryIndexKey" : "skills\/commit",
+      "sourceVersion" : "1.0.0",
+      "writtenBy" : "E946E858-BEFE-45B9-B037-5A831EFED19B"
+    },
+    {
+      "agent" : "cursor",
+      "deployedAt" : "2026-10-17T04:41:56Z",
+      "deployedContentHash" : "1dadd10dc99c0552e0d6fb31299ba39dc202dff751fa2b8a8872e020a326eac7",
+      "deployedRelativePath" : ".cursor\/skills\/commit\/SKILL.md",
+      "deployedRelativePaths" : [
+        ".cursor\/skills\/commit\/SKILL.md"
+      ],
+      "id" : "525A5010-420A-426B-8331-7F58D15DE2B6",
+      "itemDescription" : "Disciplined working-commit assistant. Groups changes into logical changesets, adds CHANGELOG entries under [Unreleased], drafts Conventional Commits messages, and commits only after explicit user approval. Never bumps VERSION, never tags — cutting a release is \/release.",
+      "itemTitle" : "commit",
+      "itemType" : "skill",
+      "libraryIndexKey" : "skills\/commit",
+      "sourceVersion" : "1.0.0",
+      "writtenBy" : "E946E858-BEFE-45B9-B037-5A831EFED19B"
+    },
+    {
+      "agent" : "codex",
+      "deployedAt" : "2026-10-17T04:41:56Z",
+      "deployedContentHash" : "e41d982586f73f1cedc9b81d9c8009e50ae341aa3a26998d8cb27bc1b5572de5",
+      "deployedRelativePath" : ".agents\/skills\/commit\/SKILL.md",
+      "deployedRelativePaths" : [
+        ".agents\/skills\/commit\/SKILL.md"
+      ],
+      "id" : "BE861F2E-EAF2-468B-91DF-B5DE4A3EEF0A",
+      "itemDescription" : "Disciplined working-commit assistant. Groups changes into logical changesets, adds CHANGELOG entries under [Unreleased], drafts Conventional Commits messages, and commits only after explicit user approval. Never bumps VERSION, never tags — cutting a release is \/release.",
+      "itemTitle" : "commit",
+      "itemType" : "skill",
+      "libraryIndexKey" : "skills\/commit",
+      "sourceVersion" : "1.0.0",
+      "writtenBy" : "E946E858-BEFE-45B9-B037-5A831EFED19B"
+    }
+  ],
+  "manifestVersion" : 1,
+  "silencedConformanceIssues" : [
+
+  ]
+}
